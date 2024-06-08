@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  body {
+    background-image: url("/image/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+<body>
+<div class="relative">
+  <div class="container pt-[50px]">
+    <img src="/image/logo.svg" alt="logo">
+  </div>
+  <div class="max-w-[498px] justify-center items-center flex flex-col mx-auto">
+    <h2 class="opacity-60 text-slate-950 text-4xl font-medium leading-tight">Hello,</h2>
+    <p class="opacity-60 text-slate-950 text-[19px] font-normal leading-tight mt-5 mb-8">Welcome to FB, let’s get you started by creating your account</p>
+    <form>
+      <input id="firstName" class="input mb-8" type="text" placeholder="Enter first name">
+      <input id="lastName" class="input mb-8" type="text" placeholder="Enter your last name">
+      <input id="email" class="input mb-8" type="email" placeholder="Enter email address">
+      <input id="businessName" class="input mb-8" type="text" placeholder="Enter business name">
+      <input id="password" class="input mb-8" type="password" placeholder="Password">
+      <button id="createAccount" class="button-red w-full mt-10" type="submit">Create an account</button>
+    </form>
+    <p class="opacity-60 text-center text-slate-950 text-[19px] font-normal leading-tight mb-10 mt-[50px]">Have an account? <a class="text-[#FF5035]" href="login.html">Login</a></p>
+  </div>
+  <p class="w-[622px] mx-auto opacity-60 text-center text-slate-950 text-[19px] font-normal leading-tight mb-10 mt-[50px]">I acknowledge that I have read and do hereby accept the <a class="text-[#FF5035]" href="/terms">terms and conditions</a> in FB Merchant Agreement and agree to <a class="text-[#FF5035]" href="/privacy">receive valuable emails</a> from FB</p>
+</div>
+<script src="signup.js"></script>
+</body>
+</html>

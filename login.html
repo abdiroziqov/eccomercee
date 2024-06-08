@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+        background-image: url("/image/background.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<body>
+<div class="relative">
+    <div class="container pt-[50px]">
+        <img src="/image/logo.svg" alt="logo">
+    </div>
+    <div class="max-w-[498px] justify-center items-center flex flex-col mx-auto">
+        <h2 class="opacity-60 text-slate-950 text-4xl font-medium leading-tight">Welcome,</h2>
+        <p class="opacity-60 text-slate-950 text-[19px] font-normal leading-tight mt-5 mb-8">Welcome back to FB. sign in to continue</p>
+        <form>
+            <input id="email" class="input mb-8" type="email" placeholder="Enter email address">
+            <input id="password" class="input mb-8" type="password" placeholder="Password">
+            <button id="createAccount" class="button-red w-full mt-10" type="submit">Login</button>
+        </form>
+        <p class="opacity-60 text-center text-slate-950 text-[19px] font-normal leading-tight mb-10 mt-[50px]">Have an account? <a class="text-[#FF5035]" href="/signup.html">Sign up</a></p>
+    </div>
+
+</div>
+<script src="signup.js"></script>
+</body>
+</html>
