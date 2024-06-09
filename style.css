@@ -1,3 +1,6 @@
+@import "base.css";
+@import "media.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -52,4 +55,80 @@ button:active {
     font-weight: 700;
     line-height: 20px;
     padding: 21px 0;
+}
+.relative {
+    position: relative;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+.mb-8 {
+    margin-bottom: 2rem;
+}
+.mt-10 {
+    margin-top: 2.5rem;
+}
+.mt-5 {
+    margin-top: 1.25rem;
+}
+.mt-\[50px\] {
+    margin-top: 50px;
+}
+.flex {
+    display: flex;
+}
+.w-\[622px\] {
+    width: 622px;
+}
+.w-full {
+    width: 100%;
+}
+.max-w-\[498px\] {
+    max-width: 498px;
+}
+.flex-col {
+    flex-direction: column;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.pt-\[50px\] {
+    padding-top: 50px;
+}
+.text-center {
+    text-align: center;
+}
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.text-\[19px\] {
+    font-size: 19px;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-normal {
+    font-weight: 400;
+}
+.leading-tight {
+    line-height: 1.25;
+}
+.text-\[\#FF5035\] {
+    --tw-text-opacity: 1;
+    color: rgb(255 80 53 / var(--tw-text-opacity));
+}
+.text-slate-950 {
+    --tw-text-opacity: 1;
+    color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+.opacity-60 {
+    opacity: 0.6;
 }

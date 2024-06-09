@@ -18,22 +18,23 @@
     }
 </style>
 <body>
-<div class="relative">
-    <div class="container pt-[50px]">
-        <img src="/image/logo.svg" alt="logo">
-    </div>
-    <div class="max-w-[498px] justify-center items-center flex flex-col mx-auto">
-        <h2 class="opacity-60 text-slate-950 text-4xl font-medium leading-tight">Welcome,</h2>
-        <p class="opacity-60 text-slate-950 text-[19px] font-normal leading-tight mt-5 mb-8">Welcome back to FB. sign in to continue</p>
-        <form>
-            <input id="email" class="input mb-8" type="email" placeholder="Enter email address">
-            <input id="password" class="input mb-8" type="password" placeholder="Password">
-            <button id="createAccount" class="button-red w-full mt-10" type="submit">Login</button>
-        </form>
-        <p class="opacity-60 text-center text-slate-950 text-[19px] font-normal leading-tight mb-10 mt-[50px]">Have an account? <a class="text-[#FF5035]" href="/signup.html">Sign up</a></p>
-    </div>
-
-</div>
-<script src="signup.js"></script>
+<header class="container pt-[50px]">
+    <img src="/image/logo.svg" alt="FB logo">
+</header>
+<main class="max-w-[498px] mx-auto flex flex-col items-center justify-center">
+    <h2 class="text-4xl font-medium text-slate-950 opacity-60 leading-tight">Welcome,</h2>
+    <p class="text-[19px] font-normal text-slate-950 opacity-60 leading-tight mt-5 mb-8">Welcome back to FB. Sign in to continue</p>
+    <form class="w-full">
+        <input id="email" class="input" type="email" placeholder="Enter email address" required>
+        <div class="relative mt-8">
+            <input id="password" class="input" type="password" placeholder="Password" required>
+            <img id="togglePassword" class="absolute top-5 right-7 cursor-pointer" src="/image/eye.svg" alt="Toggle password visibility">
+        </div>
+        <a class="text-[19px] font-normal text-slate-950 opacity-60 text-right float-right mt-5 hover:opacity-100 duration-300" href="/forgot-password.html">Forgot password?</a>
+        <button id="createAccount" class="button-red w-full mt-10" type="submit">Login</button>
+    </form>
+    <p class="text-[19px] font-normal text-slate-950 opacity-60 text-center mt-[50px] mb-10">Have an account? <a class="text-[#FF5035]" href="/signup.html">Sign up</a></p>
+</main>
+<script src="login.js"></script>
 </body>
 </html>

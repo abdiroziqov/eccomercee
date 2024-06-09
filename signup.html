@@ -26,11 +26,14 @@
     <h2 class="opacity-60 text-slate-950 text-4xl font-medium leading-tight">Hello,</h2>
     <p class="opacity-60 text-slate-950 text-[19px] font-normal leading-tight mt-5 mb-8">Welcome to FB, let’s get you started by creating your account</p>
     <form>
-      <input id="firstName" class="input mb-8" type="text" placeholder="Enter first name">
-      <input id="lastName" class="input mb-8" type="text" placeholder="Enter your last name">
-      <input id="email" class="input mb-8" type="email" placeholder="Enter email address">
-      <input id="businessName" class="input mb-8" type="text" placeholder="Enter business name">
-      <input id="password" class="input mb-8" type="password" placeholder="Password">
+      <input id="firstName" class="input mb-8" type="text" placeholder="Enter first name" required>
+      <input id="lastName" class="input mb-8" type="text" placeholder="Enter your last name" required>
+      <input id="email" class="input mb-8" type="email" placeholder="Enter email address" required>
+      <input id="businessName" class="input mb-8" type="text" placeholder="Enter business name" required>
+      <div class="relative mb-8">
+        <input id="password" class="input" type="password" placeholder="Password" required>
+        <img id="togglePassword" class="absolute top-5 right-7 cursor-pointer" src="/image/eye.svg" alt="Toggle password visibility">
+      </div>
       <button id="createAccount" class="button-red w-full mt-10" type="submit">Create an account</button>
     </form>
     <p class="opacity-60 text-center text-slate-950 text-[19px] font-normal leading-tight mb-10 mt-[50px]">Have an account? <a class="text-[#FF5035]" href="login.html">Login</a></p>

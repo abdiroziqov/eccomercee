@@ -1,3 +1,12 @@
+// show passowrd
+document.getElementById('togglePassword').addEventListener('click', function () {
+    const passwordField = document.getElementById('password');
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
+    this.src = type === 'password' ? '/image/eye.svg' : '/image/eye-closed.svg';
+});
+
+//form
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -29,7 +38,7 @@ form.addEventListener('submit', (e) => {
     }
 
     // Create an object with the form data
-    const accountData = {
+    const signupData = {
         firstName: firstName,
         lastName: lastName,
         email: email,
@@ -38,7 +47,7 @@ form.addEventListener('submit', (e) => {
     };
 
     // Save the object to local storage
-    localStorage.setItem('createAccount', JSON.stringify(accountData));
+    localStorage.setItem('createAccount', JSON.stringify(signupData));
 
     // If all validations pass, show success message
     alert('Account created successfully!');
